@@ -20,6 +20,7 @@
 </head>
 
 <body>
+<form method="get" action ="./result.html" id="form">
 	<h3>기본정보</h3>
 	<table width="100%">
 		<tr>
@@ -103,7 +104,8 @@
 			</td>
 		</tr>
 	</table>
-	<br><br>  
+	<br><br> 
+	
 	<h3>작가정보</h3>
 	<table width="100%">
 		<tr>
@@ -129,8 +131,7 @@
 			<td width="70px" align=center bgcolor="#A4A4A4" style="color:white">주요작품</td>
 			<td width="100px"><input type="text" style="width:200px" name="filmography" id="filmography" placeholder="스토리 제목을 입력해주세요">
 			<input type="text" style="width:300px" name="filmography2" id="filmography2" placeholder="해당 스토리의 역할을 입력하세요">
-			<!--<input type="button" name="delete" value="삭제"> -->
-			<button type="button"><img src="./trashbin.png" width="20px" height="20px" alt="삭제">삭제</button>
+			<input type="button" name="delete" value="삭제">
 			<br><input type="button" name="add" value="+추가">
 			<br><font color="#B14C4C">본인 참여 주요작품의 제목 및 역할에 대해 등록해 주시기 바랍니다.
 			<br>(역할은 메인작가,공동작가,보조작가,각색,각본 등 본인 역할을 정확히 기재해 주시기 바랍니다)</font>
@@ -144,10 +145,12 @@
 		</tr>
 	</table>
 		<br>
-		<input type="button" style="width:120px; height:30px; margin:auto; display:block;" name="save" value="✓ 저장">
-		<input type="button" style="width:120px; height:30px; margin:auto; display:block;" "name="save" value="취소">
+		<center>
+		<input type="button" style="width:120px; height:30px;" name="save" value="✓ 저장">
+		<input type="button" style="width:120px; height:30px;" name="save" value="취소">
+		</center>
 		<br><br>
-	
+
 	<h3>스토리 이용자 정보</h3>	
 	<table width="100%">
 		<tr>
@@ -199,11 +202,13 @@
 			<br><input type="date">~<input type="date">
 			<input type="text" name="businessinfo" id="businessinfo" placeholder="사업내용을 입력해주세요">
 			<input type="text" name="reponsibility" id="reponsibility" placeholder="담당업무를 입력해주세요">
-			<button type="button"><img src="./trashbin.png" width="20px" height="20px" alt="삭제">삭제</button>
+			<input type="button" name="delete" value="삭제">
 			<input type="button" name="bsnadd" id="bsnadd" value="+추가">
 			</td>
 		</tr>
 	</table>
-
+		<br>
+		<input type="submit" style="width:150px; height:50px; margin:auto; display:block;" value="가입하기">
+</form>
 </body>
 </html>
