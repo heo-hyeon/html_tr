@@ -14,7 +14,14 @@
 	
 	
 		<!--input태그는 form안에 꼭꼭 들어가줘야한다.-->
-		<input type="text" name="id" placeholder="아이디" id="id">
+		<input type="text" name="id" placeholder="아이디" id="id" autocomplete="on">
+		<input type="text" name="id" placeholder="아이디" id="id" required>
+		<!-- required은 type-submit사용해야보인다. 잘 사용하지않는다. -->
+		
+		<input type="text" name="id" placeholder="아이디" id="id" readonly value="no">
+		<input type="text" name="id" placeholder="아이디" id="id" disabled value="dont">
+		<!-- readonly는 입력 안 되는 칸/ disabled는 아예 사용불가능 둘 다 "value"와 세트 -->
+		
 		<br><br><input type="password" name="password" placeholder="비밀번호" id="password">
 		
 		<br><br>
@@ -57,8 +64,17 @@
 		<br><br><input type="date">
 		
 		<!--<br><br><input type="submit">  -->
-		<br><br><input type="button" id="btn" value="전송" onclick="here();">
+		<!--<br><br><input type="button" id="btn" value="전송" onclick="here();">-->
 		
+		<input type="email" name="email">
+		<input type="number" name="number">
+		<!-- <input type="file" name="file" multiple="multiple"> -->
+		<input type="search" name="search">
+		<input type="tel" name="tel">
+		<input type="image" name="image">
+		<input type="url" name="url">
+
+		<input type="submit" name="submit" value="제출">
 	</form>
 	
 		<script type="text/javascript">
