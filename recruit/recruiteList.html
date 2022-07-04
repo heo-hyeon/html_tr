@@ -13,19 +13,34 @@
 			
 			
 		th,td {
-		padding: 10px;
+			padding: 10px;
 		}
 		
+		#reset, #next {
+			display:inline-block;
+			background-color:#b0c4de; 
+			height:40px;
+			width:100px; 
+			border:solid;
+			border-width: 1px;
+			border-radius:10px; 
+		}
+		
+		#search, #search1 {
+			float: right;
+		}
 	</style>
 	
 </head>
 
 <body>
-	<h1>입사지원자 명단</h1>
-		<input type="search" name="search" id="search" placeholder="🔍검색" style="height:40px;">
+	<h1 style="text-align:center;">입사지원자 명단</h1>
+		<input type="search" name="search" id="search" placeholder="검색" style="height:40px; width:300px;">
+		<input type="button" name="search1" id="search1" value="🔍검색" style="height:30px;"> 
 		<br><br>
-			<table>
-				<tr>
+			<table width="100%">
+				<tr style="background-color:#b0c4de;">
+					<th width="40px">선택</th>
 					<th width="40px">번호</th>
 					<th width="60px">이름</th>
 					<th width="40px">성별</th>
@@ -38,6 +53,7 @@
 					<th width="90px">상세내역</th>
 				</tr>
 				<tr style="text-align:center;">
+					<td><input type="checkbox" name="1"></td>
 					<td>1</td>
 					<td>손예진</td>
 					<td>여</td>
@@ -50,6 +66,7 @@
 					<td><a href="../ch_01/3_table_tr3.html">상세내역</a></td>
 				</tr>
 				<tr style="text-align:center;">
+					<td><input type="checkbox" name="2"></td>
 					<td>2</td>
 					<td>강하늘</td>
 					<td>남</td>
@@ -62,6 +79,7 @@
 					<td><a href="../ch_01/3_table_tr3.html">상세내역</a></td>
 				</tr>
 				<tr style="text-align:center;">
+					<td><input type="checkbox" name="3"></td>
 					<td>3</td>
 					<td>정해인</td>
 					<td>남</td>
@@ -74,6 +92,7 @@
 					<td><a href="../ch_01/3_table_tr3.html">상세내역</a></td>
 				</tr>
 				<tr style="text-align:center;">
+					<td><input type="checkbox" name="4"></td>
 					<td>4</td>
 					<td>한지민</td>
 					<td>여</td>
@@ -86,6 +105,7 @@
 					<td><a href="../ch_01/3_table_tr3.html">상세내역</a></td>						
 				</tr>
 				<tr style="text-align:center;">
+					<td><input type="checkbox" name="5"></td>
 					<td>5</td>
 					<td>한효주</td>
 					<td>여</td>
@@ -98,6 +118,7 @@
 					<td><a href="../ch_01/3_table_tr3.html">상세내역</a></td>							
 				</tr>
 				<tr style="text-align:center;">
+					<td><input type="checkbox" name="6"></td>
 					<td>6</td>
 					<td>박보검</td>
 					<td>남</td>
@@ -110,6 +131,7 @@
 					<td><a href="../ch_01/3_table_tr3.html">상세내역</a></td>								
 				</tr>
 				<tr style="text-align:center;">
+					<td><input type="checkbox" name="7"></td>
 					<td>7</td>
 					<td>이태선</td>
 					<td>남</td>
@@ -122,6 +144,7 @@
 					<td><a href="../ch_01/3_table_tr3.html">상세내역</a></td>								
 				</tr>
 				<tr style="text-align:center;">
+					<td><input type="checkbox" name="8"></td>
 					<td>8</td>
 					<td>신민아</td>
 					<td>여</td>
@@ -134,8 +157,10 @@
 					<td><a href="../ch_01/3_table_tr3.html">상세내역</a></td>								
 				</tr>
 			</table>
-			<br><br>
-				<input type="button" name="close" id="close" value="닫기">
-				<input type="button" name="next" id="next" value="다음" onClick="location.href='recruitModForm.html'">
+			<br>
+			<center>
+			<input type="reset" name="reset" id="reset" value="체크 해제">
+			<input type="button" name="next" id="next" value="다음" onClick="location.href='recruitModForm.html'">
+			</center>
 </body>
 </html>
