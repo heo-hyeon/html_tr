@@ -10,20 +10,20 @@
 			border:0.3px solid black;
 			border-collapse: collapse;
 			font-family: 'KyoboHandwriting2020A';
+			font-size: 18px;
 			}
 			
 		th,td {
 			padding: 10px;
 		}
 		
-		#reset, #next, #register {
+		#reset, #register {
 			display:inline-block;
 			background-color:#b0c4de; 
 			height:40px;
 			width:100px; 
-			border:solid;
-			border-width: 1px;
-			border-radius:10px; 
+			border:none;
+			border-radius:12px;
 			font-family: 'KyoboHandwriting2020A';
 		}
 		
@@ -36,13 +36,13 @@
 		
 		h1, #search, #search1, #search2, #search3, #search3, #job, #career {
 			font-family: 'KyoboHandwriting2020A';
+			font-style: white;
 		}
-		
 	</style>
 	
 </head>
 
-<body>
+<body style="background-image: url(./image/building.jpg); background-size:cover; background-color:rgb( 255, 255, 255)">
 	<h1 style="text-align:center;">입사지원자 명단</h1>
 		<br>
 		<div align="right">
@@ -190,7 +190,6 @@
 			
 			<div align="center">
 			<input type="reset" name="reset" id="reset" value="체크 해제" style="font-size:16px;">
-			<input type="button" name="next" id="next" value="다음" onClick="location.href='recruitModForm.html'" style="font-size:16px;">
 			<input type="button" name="register" id="register" value="등록" onClick="location.href='recruitRegForm.html'" style="font-size:16px;">
 			</div>
 </body>
