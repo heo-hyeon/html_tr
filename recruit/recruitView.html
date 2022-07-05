@@ -4,17 +4,50 @@
 <meta charset="uTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>입사지원서</title>
+
 	<style type="text/css">
 		table, th, td {
-			border:1px solid black;
-			border-collapse: collapse;
-			}
+			border:1px solid  black;
+			border-collapse : separate;
+			font-family: 'GangwonEdu_OTFBoldA';
+			font-size: 18px;
+		}
 			
 		th,td {
-		padding: 10px;
+   			padding: 10px;
 		}
-	
+		
+		#back, #register {
+			display:inline-block;
+			background-color:#b0c4de; 
+			height:40px;
+			width:100px; 
+			border:solid;
+			border-width: 1px;
+			border-radius:10px; 
+			font-family: 'GangwonEdu_OTFBoldA';
+			font-size: 15px;
+		}
+		
+		@font-face {
+		    font-family: 'GangwonEdu_OTFBoldA';
+		    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2201-2@1.0/GangwonEdu_OTFBoldA.woff') format('woff');
+		    font-weight: normal;
+		    font-style: normal;
+		}
+		
+		h1 {
+			font-family: 'GangwonEdu_OTFBoldA';
+			font-size: 40px;
+		}
+		
+		h3 {
+			font-family: 'GangwonEdu_OTFBoldA';
+			font-size: 20px;
+		}
+		
 	</style>
+	
 </head>
 
 <body>
@@ -34,7 +67,8 @@
 	<h3>□기본정보</h3>
 	<table width="100%">
 		<tr align=center>
-			<td width="150px" rowspan="6" style="color:red;"><img src="../image/yejin.jpg" width="250px" height="250px"></td>
+			<td width="100px" rowspan="6" style="padding:0 0 0 0;">
+			<img src="../image/yejin.jpg" width="250px" height="280px"></td>
 			<td width="100px" bgcolor="#b0c4de">성명</td>
 			<td width="300px">손 예 진</td>
 			<td width="100px" bgcolor="#b0c4de">한문</td>
@@ -44,7 +78,7 @@
 			<td width="100px" bgcolor="#b0c4de">영문</td>
 			<td width="300px">Son Ye-jin</td>
 			<td width="100px" bgcolor="#b0c4de">생년월일</td>
-			<td width="300px">82.01.11</td>
+			<td width="300px">91.01.11</td>
 		</tr>
 		<tr align=center>
 			<td width="100px" bgcolor="#b0c4de">전화번호</td>
@@ -142,5 +176,10 @@
 			<td width="500px">최신 패션 아이템 트렌드 해석 및 주니어 관리</td>
 		</tr>
 	</table>
+	<br>
+	<div align=center>
+	<input type="button" name="back" id="back" value="뒤로" onClick="location.href='recruitList.html'">
+	<input type="button" name="register" id="register" value="등록" onClick="location.href='recruitRegForm.html'">
+	</div>
 </body>
 </html>

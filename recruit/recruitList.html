@@ -7,10 +7,10 @@
 	<style type="text/css">
 	
 		table, th, td {
-			border:0.5px solid black;
+			border:0.3px solid black;
 			border-collapse: collapse;
+			font-family: 'KyoboHandwriting2020A';
 			}
-			
 			
 		th,td {
 			padding: 10px;
@@ -24,7 +24,20 @@
 			border:solid;
 			border-width: 1px;
 			border-radius:10px; 
+			font-family: 'KyoboHandwriting2020A';
 		}
+		
+		@font-face {
+		    font-family: 'KyoboHandwriting2020A';
+		    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2112@1.0/KyoboHandwriting2020A.woff') format('woff');
+		    font-weight: normal;
+		    font-style: normal;
+		}
+		
+		h1, #search, #search1, #search2, #search3, #search3, #job, #career {
+			font-family: 'KyoboHandwriting2020A';
+		}
+		
 	</style>
 	
 </head>
@@ -33,13 +46,11 @@
 	<h1 style="text-align:center;">입사지원자 명단</h1>
 		<br>
 		<div align="right">
-		<input type="search" name="search" id="search" placeholder="이름 검색" style="height:40px; width:200px;">
-		<input type="button" name="search1" id="search1" value="🔍검색" style="height:30px; background-color:#b0c4de;"> 
+		<input type="search" name="search" id="search" placeholder="이름" style="height:40px; width:200px;">
 		<!--이름 검색-->
-		<input type="search" name="search" id="search2" placeholder="전공 검색" style="height:40px; width:200px;">
-		<input type="button" name="search1" id="search3" value="🔍검색" style="height:30px; background-color:#b0c4de;"> 
+		<input type="search" name="search" id="search2" placeholder="전공" style="height:40px; width:200px;">
 		<!--전공 검색-->
-			<select style="width:200px; height:40px;">
+			<select id="job" style="width:200px; height:40px;">
 				<option>기획/MD
 				<option>IT개발
 				<option>기획/전략
@@ -47,14 +58,13 @@
 				<option>회계/총무
 				<option>영업/판매
 			</select>
-		<input type="button" name="search1" id="search3" value="🔍검색" style="height:30px; background-color:#b0c4de;"> 
 		<!--지원분야 검색-->
-			<select style="width:200px; height:40px;">
+			<select id="career" style="width:200px; height:40px;">
 				<option>신입
 				<option>경력
 				
 			</select>
-		<input type="button" name="search1" id="search3" value="🔍검색" style="height:30px; background-color:#b0c4de;"> 
+		<input type="button" name="search1" id="search3" value="🔍검색" style="height:30px; background-color:#b0c4de; border:none;"> 
 		</div>
 		<br><br>
 			<table width="100%">
@@ -65,123 +75,123 @@
 					<th width="40px">성별</th>
 					<th width="40px">나이</th>
 					<th width="150px">핸드폰번호</th>
+					<th width="200px">이메일</th>
 					<th width="120px">전공</th>
 					<th width="100px">지원분야</th>
 					<th width="50px">신입/경력</th>
 					<th width="90px">자격증유무</th>	
-					<th width="90px">상세내역</th>
 				</tr>
 				<tr style="text-align:center;">
 					<td><input type="checkbox" name="1"></td>
 					<td>1</td>
-					<td>손예진</td>
+					<td><a href="./recruitView.html">손예진</a></td>
 					<td>여</td>
 					<td>32</td>
 					<td>010-1234-1234</td>
+					<td>yejin@naver.com</td>
 					<td>호텔경영학과</td>
 					<td>기획/MD</td>
 					<td>경력</td>
 					<td>유</td>
-					<td><a href="./recruitView.html">상세내역</a></td>
 				</tr>
 				<tr style="text-align:center;">
 					<td><input type="checkbox" name="2"></td>
 					<td>2</td>
-					<td>강하늘</td>
+					<td><a href="./recruitView.html">강하늘</a></td>
 					<td>남</td>
 					<td>26</td>
 					<td>010-1234-1234</td>
+					<td>kksky@hanmail.net</td>
 					<td>컴퓨터공학과</td>
 					<td>IT개발</td>
 					<td>신입</td>
 					<td>유</td>
-					<td><a href="./recruitView.html">상세내역</a></td>
 				</tr>
 				<tr style="text-align:center;">
 					<td><input type="checkbox" name="3"></td>
 					<td>3</td>
-					<td>정해인</td>
+					<td><a href="./recruitView.html">정해인</a></td>
 					<td>남</td>
 					<td>30</td>
 					<td>010-1234-1234</td>
+					<td>junghi@hanmail.net</td>
 					<td>전기공학과</td>
 					<td>기획/전략</td>
 					<td>경력</td>
 					<td>유</td>
-					<td><a href="./recruitView.html">상세내역</a></td>
 				</tr>
 				<tr style="text-align:center;">
 					<td><input type="checkbox" name="4"></td>
 					<td>4</td>
-					<td>한지민</td>
+					<td><a href="./recruitView.html">한지민</a></td>
 					<td>여</td>
 					<td>31</td>
 					<td>010-1234-1234</td>
+					<td>hjmm@naver.com</td>
 					<td>광고언론학과</td>
 					<td>마케팅/홍보</td>
 					<td>신입</td>	
 					<td>무</td>		
-					<td><a href="./recruitView.html">상세내역</a></td>					
 				</tr>
 				<tr style="text-align:center;">
 					<td><input type="checkbox" name="5"></td>
 					<td>5</td>
-					<td>한효주</td>
+					<td><a href="./recruitView.html">한효주</a></td>
 					<td>여</td>
 					<td>28</td>
 					<td>010-1234-1234</td>
+					<td>hyojj@gmail.com</td>
 					<td>경제학과</td>
 					<td>회계/총무</td>
 					<td>신입</td>		
 					<td>유</td>
-					<td><a href="./recruitView.html">상세내역</a></td>						
 				</tr>
 				<tr style="text-align:center;">
 					<td><input type="checkbox" name="6"></td>
 					<td>6</td>
-					<td>박보검</td>
+					<td><a href="./recruitView.html">박보검</a></td>
 					<td>남</td>
 					<td>28</td>
 					<td>010-1234-1234</td>
+					<td>bbkk@gmail.com</td>
 					<td>경영학과</td>
 					<td>영업/판매</td>
 					<td>신입</td>	
 					<td>무</td>
-					<td><a href="./recruitView.html">상세내역</a></td>								
 				</tr>
 				<tr style="text-align:center;">
 					<td><input type="checkbox" name="7"></td>
 					<td>7</td>
-					<td>이태선</td>
+					<td><a href="./recruitView.html">이태선</a></td>
 					<td>남</td>
 					<td>30</td>
 					<td>010-1234-1234</td>
+					<td>taelee@naver.com</td>
 					<td>기계공학과</td>
 					<td>IT개발</td>
 					<td>경력</td>	
 					<td>무</td>
-					<td><a href="./recruitView.html">상세내역</a></td>								
 				</tr>
 				<tr style="text-align:center;">
 					<td><input type="checkbox" name="8"></td>
 					<td>8</td>
-					<td>신민아</td>
+					<td><a href="./recruitView.html">신민아</a></td>
 					<td>여</td>
 					<td>27</td>
 					<td>010-1234-1234</td>
+					<td>minA@naver.com</td>
 					<td>산업디자인학과</td>
 					<td>기획/MD</td>
 					<td>신입</td>	
 					<td>유</td>
-					<td><a href="./recruitView.html">상세내역</a></td>								
 				</tr>
 			</table>
 			<br>
 			
 			<div align="center">
-			<input type="reset" name="reset" id="reset" value="체크 해제">
-			<input type="button" name="next" id="next" value="다음" onClick="location.href='recruitModForm.html'">
-			<input type="button" name="register" id="register" value="등록" onClick="location.href='recruitRegForm.html'">
+			<input type="reset" name="reset" id="reset" value="체크 해제" style="font-size:16px;">
+			<input type="button" name="next" id="next" value="다음" onClick="location.href='recruitModForm.html'" style="font-size:16px;">
+			<input type="button" name="register" id="register" value="등록" onClick="location.href='recruitRegForm.html'" style="font-size:16px;">
 			</div>
 </body>
 </html>
