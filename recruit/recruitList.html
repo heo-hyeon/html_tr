@@ -1,0 +1,200 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+	<meta charset="uTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>RecruitList</title>
+	<style type="text/css">
+	
+		table, th, td {
+			border: 0.3px solid #006400;
+			border-collapse: collapse;
+			font-family: 'KyoboHandwriting2020A';
+			font-size: 18px;
+			}
+			
+		th,td {
+			padding: 10px;
+		}
+		
+		#reset, #register {
+			display:inline-block;
+			background-color:#8FBC8F;
+			height:40px;
+			width:100px; 
+			border:none;
+			border-radius:12px;
+			font-family: 'KyoboHandwriting2020A';
+		}
+		
+		@font-face {
+		    font-family: 'KyoboHandwriting2020A';
+		    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2112@1.0/KyoboHandwriting2020A.woff') format('woff');
+		    font-weight: normal;
+		    font-style: normal;
+		}
+		
+		input, select {
+			font-family: 'KyoboHandwriting2020A';
+		}
+		
+		h1 {
+			font-family: 'KyoboHandwriting2020A';
+			font-size: 40px;
+		}
+	</style>
+	
+</head>
+
+<body style="background-image: url(./image/starbucks2.jpg); background-size:cover;">
+	<h1 style="text-align:center; color:#006400;">입사지원자 명단</h1>
+		<br>
+		<div align="right">
+		<input type="search" name="search" id="search" placeholder="이름" style="height:40px; width:200px;">
+		<!--이름 검색-->
+		<input type="search" name="search" id="search2" placeholder="전공" style="height:40px; width:200px;">
+		<!--전공 검색-->
+			<select id="job" style="width:200px; height:40px;">
+				<option>기획/MD
+				<option>IT개발
+				<option>기획/전략
+				<option>마케팅/홍보
+				<option>회계/총무
+				<option>영업/판매
+			</select>
+		<!--지원분야 검색-->
+			<select id="career" style="width:200px; height:40px;">
+				<option>신입
+				<option>경력
+				
+			</select>
+		<input type="button" name="search1" id="search3" value="🔍검색" style="height:30px; background-color:#8FBC8F ; border:none;"> 
+		</div>
+		<br><br>
+			<table width="100%">
+				<tr style="background-color:#88CDAA;">
+					<th width="40px">선택</th>
+					<th width="40px">번호</th>
+					<th width="60px">이름</th>
+					<th width="40px">성별</th>
+					<th width="40px">나이</th>
+					<th width="150px">핸드폰번호</th>
+					<th width="200px">이메일</th>
+					<th width="120px">전공</th>
+					<th width="100px">지원분야</th>
+					<th width="50px">신입/경력</th>
+					<th width="90px">자격증유무</th>	
+				</tr>
+				<tr style="text-align:center; background-color:#FFFAFA;">
+					<td><input type="checkbox" name="1"></td>
+					<td>1</td>
+					<td><a href="./recruitView.html">손예진</a></td>
+					<td>여</td>
+					<td>32</td>
+					<td>010-1234-1234</td>
+					<td>yejin@naver.com</td>
+					<td>호텔경영학과</td>
+					<td>기획/MD</td>
+					<td>경력</td>
+					<td>유</td>
+				</tr>
+				<tr style="text-align:center; background-color:#FFFAFA";">
+					<td><input type="checkbox" name="2"></td>
+					<td>2</td>
+					<td><a href="./recruitView.html">강하늘</a></td>
+					<td>남</td>
+					<td>26</td>
+					<td>010-1234-1234</td>
+					<td>kksky@hanmail.net</td>
+					<td>컴퓨터공학과</td>
+					<td>IT개발</td>
+					<td>신입</td>
+					<td>유</td>
+				</tr>
+				<tr style="text-align:center; background-color:#FFFAFA";">
+					<td><input type="checkbox" name="3"></td>
+					<td>3</td>
+					<td><a href="./recruitView.html">정해인</a></td>
+					<td>남</td>
+					<td>30</td>
+					<td>010-1234-1234</td>
+					<td>junghi@hanmail.net</td>
+					<td>전기공학과</td>
+					<td>기획/전략</td>
+					<td>경력</td>
+					<td>유</td>
+				</tr>
+				<tr style="text-align:center; background-color:#FFFAFA";">
+					<td><input type="checkbox" name="4"></td>
+					<td>4</td>
+					<td><a href="./recruitView.html">한지민</a></td>
+					<td>여</td>
+					<td>31</td>
+					<td>010-1234-1234</td>
+					<td>hjmm@naver.com</td>
+					<td>광고언론학과</td>
+					<td>마케팅/홍보</td>
+					<td>신입</td>	
+					<td>무</td>		
+				</tr>
+				<tr style="text-align:center; background-color:#FFFAFA";">
+					<td><input type="checkbox" name="5"></td>
+					<td>5</td>
+					<td><a href="./recruitView.html">한효주</a></td>
+					<td>여</td>
+					<td>28</td>
+					<td>010-1234-1234</td>
+					<td>hyojj@gmail.com</td>
+					<td>경제학과</td>
+					<td>회계/총무</td>
+					<td>신입</td>		
+					<td>유</td>
+				</tr>
+				<tr style="text-align:center; background-color:#FFFAFA;"">
+					<td><input type="checkbox" name="6"></td>
+					<td>6</td>
+					<td><a href="./recruitView.html">박보검</a></td>
+					<td>남</td>
+					<td>28</td>
+					<td>010-1234-1234</td>
+					<td>bbkk@gmail.com</td>
+					<td>경영학과</td>
+					<td>영업/판매</td>
+					<td>신입</td>	
+					<td>무</td>
+				</tr>
+				<tr style="text-align:center; background-color:#FFFAFA";">
+					<td><input type="checkbox" name="7"></td>
+					<td>7</td>
+					<td><a href="./recruitView.html">이태선</a></td>
+					<td>남</td>
+					<td>30</td>
+					<td>010-1234-1234</td>
+					<td>taelee@naver.com</td>
+					<td>기계공학과</td>
+					<td>IT개발</td>
+					<td>경력</td>	
+					<td>무</td>
+				</tr>
+				<tr style="text-align:center; background-color:#FFFAFA";">
+					<td><input type="checkbox" name="8"></td>
+					<td>8</td>
+					<td><a href="./recruitView.html">신민아</a></td>
+					<td>여</td>
+					<td>27</td>
+					<td>010-1234-1234</td>
+					<td>minA@naver.com</td>
+					<td>산업디자인학과</td>
+					<td>기획/MD</td>
+					<td>신입</td>	
+					<td>유</td>
+				</tr>
+			</table>
+			<br>
+			
+			<div align="center">
+			<input type="reset" name="reset" id="reset" value="체크 해제" style="font-size:16px;">
+			<input type="button" name="register" id="register" value="등록" onClick="location.href='recruitRegForm.html'" style="font-size:16px;">
+			</div>
+</body>
+</html>
